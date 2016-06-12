@@ -38,9 +38,9 @@ header.ui.fixed.menu:hover { opacity: 1; }
     font-weight: 600;
 }
 
-.background.img[value=cycle] { background-image: url('../img/cycle.png') !important; }
-.background.img[value=game] { background-image: url('../img/lol.png') !important; }
-.background.img[value=guitar] { background-image: url('../img/guitar.png') !important; }
+.background.img[value=cycle] { background-image: url('/img/cycle.png') !important; }
+.background.img[value=game] { background-image: url('/img/lol.png') !important; }
+.background.img[value=guitar] { background-image: url('/img/guitar.png') !important; }
 
 .animated {
     transition: 1s;
@@ -64,13 +64,13 @@ header.ui.fixed.menu:hover { opacity: 1; }
     margin : 0;
 }
 section.fullpage { transition: background 1s ease; }
-section.fullpage:nth-child(1) { background-image: url('../img/main.jpg') !important; }
+section.fullpage:nth-child(1) { background-image: url('/img/main.jpg') !important; }
 section.fullpage:nth-child(1) .ui.cube.shape .side{ width:400px; }
-section.fullpage:nth-child(2) { background-image: url('../img/goals.jpg') !important; }
-section.fullpage:nth-child(9) { background-image: url('../img/career.jpg') !important; }
-section.fullpage:nth-child(3) { background-image: url('../img/experiences.jpeg'); }
-section.fullpage:nth-child(4) { background-image: url('../img/skills.jpg') !important; }
-section.fullpage:nth-child(5) { background-image: url('../img/hobbies.jpg') !important; }
+section.fullpage:nth-child(2) { background-image: url('/img/goals.jpg') !important; }
+section.fullpage:nth-child(9) { background-image: url('/img/career.jpg') !important; }
+section.fullpage:nth-child(3) { background-image: url('/img/experiences.jpeg'); }
+section.fullpage:nth-child(4) { background-image: url('/img/skills.jpg') !important; }
+section.fullpage:nth-child(5) { background-image: url('/img/hobbies.jpg') !important; }
 
 .ui.container h1.header {
     font-family:  'Nothing You Could Do', cursive;
