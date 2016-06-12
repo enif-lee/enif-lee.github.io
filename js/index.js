@@ -6,7 +6,7 @@
  *********************************************************************************/
 var pages = {
     getEvent: function (index) {
-        if (pages[index] != undefined) { pages[index]($('section.fullpage').eq(index-1)); pages[index] = null; }
+        if (pages[index] != undefined) { pages[index]($('section.fullpage').eq(index - 1)); pages[index] = null; }
         $("#nav .item").removeClass('active').eq(index).addClass('active');
     },
 
@@ -14,26 +14,26 @@ var pages = {
     1: function ($page) {
         var $cube = $page.find('.shape');
         $cube.shape();
-        setTimeout(() => {
+        setTimeout(function (){
             $cube.shape('flip up');
         }, 2000);
-        setTimeout(() => {
+        setTimeout(function (){
             $cube.shape('flip up');
         }, 4000);
-        setTimeout(() => {
+        setTimeout(function (){
             $cube.find('.side').animate({ width: 460, height: 400 })
         }, 5500);
     },
     2: function ($page) {
-        setTimeout(() => {
+        setTimeout(function (){
             $page.find('.wrap.fullpage').addClass('brightness');
             $page.find('#title').typeIt({
                 strings: 'To be contributer.',
                 speed: 50,
                 autoStart: false
             });
-            setTimeout(() => {
-                $page.find('.content').fadeTo('fast',1);
+            setTimeout(function (){
+                $page.find('.content').fadeTo('fast', 1);
             }, 1000)
         }, 1000);
     },
@@ -57,12 +57,12 @@ var pages = {
  *********************************************************************************/
 
 var navigationBar = {
-    move : function (index) {
+    move: function (index) {
         $("#nav .item").removeClass('active').eq(index).addClass('active');
         $("#main").moveTo(index);
     },
-    getIndex : function () {
-        return $("#nav .item").index($("#nav .item.active"))+1;
+    getIndex: function () {
+        return $("#nav .item").index($("#nav .item.active")) + 1;
     }
 }
 
@@ -76,7 +76,7 @@ $("#main").onepage_scroll({
     animationTime: 500,
     pagination: false,
     updateURL: false,
-    beforeMove :pages.getEvent,
+    beforeMove: pages.getEvent,
     loop: false,
     keyboard: true,
     responsiveFallback: false,
@@ -88,7 +88,10 @@ $("#nav .item").on('click', function () {
     navigationBar.move($("#nav .item").index(this));
 });
 
-$('.fullpage').imagesLoaded({ background: true }).done(function () {
+$('section.fullpage').imagesLoaded({ background: true }).progress(function (instance, image) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+    console.log('image is ' + result + ' for ' + image.img.src);
+}).done(function () {
     $('#page_loader').fadeOut();
     pages.getEvent(1);
 });
