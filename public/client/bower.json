@@ -1,0 +1,24 @@
+{
+  "name": "blog32",
+  "authors": [
+    "Lee Jinseoung <yano24@naver.com>"
+  ],
+  "description": "myBlog",
+  "main": "",
+  "license": "Private",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "semantic": "semantic-ui#^2.1.8",
+    "waitForImages": "^2.2.0",
+    "typeit": "^4.2.3"
+  }
+}

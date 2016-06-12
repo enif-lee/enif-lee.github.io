@@ -1,0 +1,39 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "node/node.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "mime/mime.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "express/express.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "socket.io/socket.io.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "gulp/gulp.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "orchestrator/orchestrator.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "q/Q.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    }
+  }
+}

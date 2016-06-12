@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ES6"
+    },
+    "files": [
+        "public/server/app.js",
+		"typings/tsd.d.ts"
+    ]
+}

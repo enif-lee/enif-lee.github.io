@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+
+*{font-family: 'Nanum Myeongjo', serif;}
+.ui.header{font-family: 'Nanum Myeongjo', serif;}
+
+header.ui.fixed.menu { opacity: 0.9; transition-duration: 0.3s; }
+header.ui.fixed.menu:hover { opacity: 1; }
+
+.ui.grid.segment {
+    margin: 0 !important;
+}
+.ui.menu .item img.logo {
+    width: 12em;
+}
+.fullpage {
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+    background-position: center  !important; 
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+}
+.nopadded {
+    padding : 0 !important;
+}
+
+.background {
+    background-position: center  !important;
+    background-size: cover !important;
+}
+
+.hobby {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.background.img[value=cycle] { background-image: url('../img/cycle.png') !important; }
+.background.img[value=game] { background-image: url('../img/lol.png') !important; }
+.background.img[value=guitar] { background-image: url('../img/guitar.png') !important; }
+
+.animated {
+    transition: 1s;
+}
+.hidden {
+    display: none;
+}
+.novisible {
+    opacity: 0;
+}
+.white {
+    color : white;
+}
+.brightness {
+    background: rgba(0,0,0,0.5);
+}
+.wrap.fullpage.brightness > div {
+    padding-top : 1em;
+}
+.ui.grid {
+    margin : 0;
+}
+section.fullpage { transition: background 1s ease; }
+section.fullpage:nth-child(1) { background-image: url('../img/main.jpg') !important; }
+section.fullpage:nth-child(1) .ui.cube.shape .side{ width:400px; }
+section.fullpage:nth-child(2) { background-image: url('../img/goals.jpg') !important; }
+section.fullpage:nth-child(9) { background-image: url('../img/career.jpg') !important; }
+section.fullpage:nth-child(3) { background-image: url('../img/experiences.jpeg'); }
+section.fullpage:nth-child(4) { background-image: url('../img/skills.jpg') !important; }
+section.fullpage:nth-child(5) { background-image: url('../img/hobbies.jpg') !important; }
+
+.ui.container h1.header {
+    font-family:  'Nothing You Could Do', cursive;
+    font-weight: 100;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+.ui.container h1.header.line {
+    border-bottom: 1px solid black;
+}
+.ui.container h1.header.inverted.line {
+    border-bottom: 1px solid white;
+}
+.ui.container h3.header {
+    font-size: 2em;
+}
+.ui.container p {
+    font-size: 1.2em;
+}
+
+.ui.cube.shape .side {
+    background: rgba(0,0,0,0.2);
+    border: 2px solid #eee;
+    color : white;
+    overflow: hidden;
+    animation-duration: 1s;
+}
+
+.ui.header.normal {
+    font-weight: normal;
+}
+
+#about_header > h1 {
+    font-size : 2em;
+    font-weight: normal;
+    margin-bottom : 1.5em;
+    margin-top : 0em;
+}
+#about_header > h3 {
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+#about_header > h5 {
+    margin-top: 2.5em;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+section#hobbies .ui.container.equal.width.grid {
+    height: 300px;
+}
+
+section#hobbies .ui.container.equal.width.grid .column{
+    padding : 0;
+}
