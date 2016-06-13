@@ -77,6 +77,8 @@ section.full-page:nth-child(9) { background-image: url('/img/career.jpg') !impor
 section.full-page:nth-child(3) { background-image: url('/img/experiences.jpeg'); }
 section.full-page:nth-child(4) { background-image: url('/img/skills.jpg') !important; }
 section.full-page:nth-child(5) { background-image: url('/img/hobbies.jpg') !important; }
+section.full-page:nth-child(5).cycle { background-image: url('/img/cycle_bg.jpg') !important;}
+section.full-page:nth-child(5).guitar { background-image: url('/img/guitar_bg.jpg') !important;}
 
 .ui.container h1.header {
     font-family:  'Nothing You Could Do', cursive;
@@ -146,4 +148,5 @@ section#hobbies > div#explain i#close {
     color: white;
     font-size: 2em;
     line-height: 2em;
+    cursor: pointer;
 }

@@ -1,5 +1,25 @@
 'use strict';
 
+/*********************************************************************************
+ * Data
+ *********************************************************************************/
+
+const datas = {
+    hobbies :{
+        cycle : {
+            img : '/img/cycle_bg.jpg',
+            title : 'Increase endurance',
+            contents : 'CYCLE 테스트입니다.'
+        },
+        guitar : {
+            img : '/img/guitar_bg.jpg',
+            title : 'To grow up creativity',
+            contents : 'Guitar 테스트입니다.'
+        }
+    }
+}
+
+
 
 /*********************************************************************************
  * Page Module
@@ -99,16 +119,42 @@ $('section.full-page').imagesLoaded({ background: true }).progress(function (ins
 $('#da-thumbs > li').hoverdir();
 
 
-$('section#hobbies div.hover').on('click', function () {
-    $('section#hobbies div#selections').fadeTo('fast', 0, function () { 
-        $(this).hide();
-        $('section#hobbies div#explain').fadeTo('fast', 1);
-    });
-});
 
-$('section#hobbies div#explain #close').on('click', function () {
-    $('section#hobbies div#selections').show(function () {
-        $(this).fadeTo(1000, 1);
-    })
-    $('section#hobbies div#explain').fadeTo('fast', 0);
-});
+/*********************************************************************************
+ * Hobbies Page
+ *********************************************************************************/
+(function ($) { 
+
+    var $hobbies = $('section#hobbies');
+    $hobbies.find('div.hover').on('click', function () {
+        var type = $(this).data('value');
+        var hobby = datas.hobbies[$(this).data('value')];
+
+        $hobbies.find('div#selections').fadeTo('fast', 0, function () { 
+            $(this).hide();
+            $hobbies.find('p#contents').text(hobby.contents);
+            $hobbies.addClass(type);
+
+            $hobbies.find('div#explain').fadeTo('fast', 1, function () {
+                console.log($(this).find('#title'));
+                $(this).find('#title').typeIt({
+                    strings : hobby.title,
+                    speed: 100,
+                    autoStart: false
+                });
+            });
+        });
+    });
+
+    $hobbies.find('div#explain #close').on('click', function () {
+        $hobbies.removeClass('cycle').removeClass('guitar');
+        $hobbies.find('div#selections').show(function () {
+            $(this).fadeTo(1000, 1);
+        })
+        $hobbies.find('div#explain').fadeTo('fast', 0, function () {
+            $hobbies.find('h1#title').empty();
+            $hobbies.find('p#contents').empty();
+        });
+    });
+
+})(jQuery)
