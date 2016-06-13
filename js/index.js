@@ -6,7 +6,7 @@
  *********************************************************************************/
 var pages = {
     getEvent: function (index) {
-        if (pages[index] != undefined) { pages[index]($('section.fullpage').eq(index - 1)); pages[index] = null; }
+        if (pages[index] != undefined) { pages[index]($('section.full-page').eq(index - 1)); pages[index] = null; }
         $("#nav .item").removeClass('active').eq(index).addClass('active');
     },
 
@@ -26,9 +26,9 @@ var pages = {
     },
     2: function ($page) {
         setTimeout(function (){
-            $page.find('.wrap.fullpage').addClass('brightness');
+            $page.find('.wrap.full-page').addClass('brightness');
             $page.find('#title').typeIt({
-                strings: 'To be contributer.',
+                strings: 'To be contributor.',
                 speed: 50,
                 autoStart: false
             });
@@ -38,13 +38,13 @@ var pages = {
         }, 1000);
     },
     3: function ($page) {
-        // $('section.fullpage').eq(2).css('background', 'url("../img/goals.jpg")');
+        // $('section.full-page').eq(2).css('background', 'url("../img/goals.jpg")');
     },
     4: function ($page) {
 
     },
     5: function ($page) {
-
+        
     },
     6: function () {
 
@@ -88,7 +88,7 @@ $("#nav .item").on('click', function () {
     navigationBar.move($("#nav .item").index(this));
 });
 
-$('section.fullpage').imagesLoaded({ background: true }).progress(function (instance, image) {
+$('section.full-page').imagesLoaded({ background: true }).progress(function (instance, image) {
     var result = image.isLoaded ? 'loaded' : 'broken';
     console.log('image is ' + result + ' for ' + image.img.src);
 }).done(function () {
@@ -97,3 +97,18 @@ $('section.fullpage').imagesLoaded({ background: true }).progress(function (inst
 });
 
 $('#da-thumbs > li').hoverdir();
+
+
+$('section#hobbies div.hover').on('click', function () {
+    $('section#hobbies div#selections').fadeTo('fast', 0, function () { 
+        $(this).hide();
+        $('section#hobbies div#explain').fadeTo('fast', 1);
+    });
+});
+
+$('section#hobbies div#explain #close').on('click', function () {
+    $('section#hobbies div#selections').show(function () {
+        $(this).fadeTo(1000, 1);
+    })
+    $('section#hobbies div#explain').fadeTo('fast', 0);
+});
