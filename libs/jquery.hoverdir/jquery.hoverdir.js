@@ -42,7 +42,7 @@
             easing: 'ease',
             hoverDelay: 0,
             inverse: false,
-            hoverElem: 'div'
+            hoverElem: 'div.hover'
         },
         constructor: Hoverdir,
         /**
