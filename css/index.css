@@ -158,7 +158,7 @@ section#experiences .titles a:hover{
 }
 /* Section Skills */
 
-section#skills .ui.container.inverted.padded p { padding-bottom: 20px;}
+section#skills .ui.container.inverted.padded p { padding-bottom: 2.5rem;}
 section#skills .ui.container.inverted.padded p:last-child { padding-bottom: 0px;}
 
 /* Section hobbies */
