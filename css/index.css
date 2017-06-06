@@ -156,6 +156,11 @@ section#experiences .titles a:hover{
     background: rgba(0,0,0,0.75);
     font-weight: bold;
 }
+/* Section Skills */
+
+section#skills .ui.container.inverted.padded p { padding-bottom: 20px;}
+section#skills .ui.container.inverted.padded p:last-child { padding-bottom: 0px;}
+
 /* Section hobbies */
 section#hobbies .ui.container.equal.width.grid { height: 300px; }
 section#hobbies .ui.container.equal.width.grid .column{ padding : 0;}
