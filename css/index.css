@@ -162,6 +162,6 @@ section#skills .ui.container.inverted.padded p { padding-bottom: 2.5rem;}
 section#skills .ui.container.inverted.padded p:last-child { padding-bottom: 0px;}
 
 /* Section hobbies */
-section#hobbies .ui.container.equal.width.grid { height: 300px; }
+section#hobbies .ui.container.equal.width.grid { height: 300px; box-shadow: 0 0 15px #333; }
 section#hobbies .ui.container.equal.width.grid .column{ padding : 0;}
 section#hobbies .ui.container .column .img { height:100%; align-self:  center; }
