@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>Lee Jinseoung - Portfolio</title>
-    <link href="libs/semantic/dist/semantic.min.css" rel="stylesheet" />
-    <link href="libs/onepage-scroll/onepage-scroll.css" rel="stylesheet" />
-    <link href="libs/jquery.hoverdir/style.css" rel="stylesheet" />
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="libs/semantic/dist/semantic.min.css" rel="stylesheet"/>
+    <link href="libs/onepage-scroll/onepage-scroll.css" rel="stylesheet"/>
+    <link href="libs/jquery.hoverdir/style.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
     <script src="libs/semantic/dist/semantic.min.js"></script>
@@ -17,99 +17,102 @@
 </head>
 
 <body>
-    <div id="page_loader" class="ui active dimmer">
-        <div class="ui text large loader">Loading</div>
+<div id="page_loader" class="ui active dimmer">
+    <div class="ui text large loader">Loading</div>
+</div>
+<header class="ui fixed menu">
+    <div id="nav" class="ui container">
+        <a href="#" class="header item">
+            <img class="logo" src="img/logo.png"/>
+        </a>
+        <a href="#" class="item active">About</a>
+        <a href="#" class="item">Goals</a>
+        <a href="#" class="item">Experiences</a>
+        <a href="#" class="item">Skills</a>
+        <a href="#" class="item">Hobbies</a>
     </div>
-    <header class="ui fixed menu">
-        <div id="nav" class="ui container">
-            <a href="#" class="header item">
-                <img class="logo" src="img/logo.png" />
-            </a>
-            <a href="#" class="item active">About</a>
-            <a href="#" class="item">Goals</a>
-            <a href="#" class="item">Experiences</a>
-            <a href="#" class="item">Skills</a>
-            <a href="#" class="item">Hobbies</a>
+</header>
+
+<!-- START : Sections -->
+<article id="main">
+    <section class="ui middle aligned center aligned grid vertical full-page">
+        <div class="column">
+            <div class="ui cube shape">
+                <div class="sides">
+                    <div class="active side">
+                        <div class="content">
+                            <div class="center">
+                                괜찮은 건 안돼.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <div class="content">
+                            <div class="center">
+                                최선이 뭘까?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <div class="content">
+                            <div id="about_header" class="ui text center">
+                                <h5 class="ui inverted header">항상 최선을 고민합니다.</h5>
+                                <h1 class="ui inverted header">이진성</h1>
+                                <h3 class="ui inverted header">Hybrid Application & Full-Stack Developer</h3>
+                                <h3 class="ui inverted header">jinseoung_lee@naver.com</h3>
+                                <h3 class="ui inverted header">010-2253-9624</h3>
+                                <h3 class="ui inverted header">sticky32.tistory.com</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <!-- START : Sections -->
-    <article id="main">
-        <section class="ui middle aligned center aligned grid vertical full-page">
+    </section>
+    <section class="ui vertical full-page">
+        <div class="ui wrap full-page animated middle aligned center aligned grid vertical">
             <div class="column">
-                <div class="ui cube shape">
-                    <div class="sides">
-                        <div class="active side">
-                            <div class="content">
-                                <div class="center">
-                                    괜찮은 건 안돼.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="side">
-                            <div class="content">
-                                <div class="center">
-                                    최선이 뭘까?
-                                </div>
-                            </div>
-                        </div>
-                        <div class="side">
-                            <div class="content">
-                                <div id="about_header" class="ui text center">
-                                    <h5 class="ui inverted header">항상 최선을 고민합니다.</h3>
-                                    <h1 class="ui inverted header">이진성</h1>
-                                    <h3 class="ui inverted header">yano24@naver.com</h3>
-                                    <h3 class="ui inverted header">010-2253-9624</h3>
-                                    <h3 class="ui inverted header">1996/08/24</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="ui container inverted padded">
+                    <h1 id="title" class="ui inverted header large"></h1>
+                    <p class="white novisible content">개인프로젝트 및 업무에서 수 많은 오픈 소스를 적용하며, 기능을 하나하나 개발하는 것도 굉장히 즐거운 일이지만 결과적으로 기술적 측면에서 개발보단 사용이 더 많은 것 같다고 생각했습니다, 또한 프레임워크를 사용할수록 구조와 동작 원리 대해
+                        궁금하였습니다.</p>
+                    <p class="white novisible content">그때 저는 “아! 스스로의 깊이 있는 기술 역량 향상과 업무 능력의 발전을 이루려면 open source contributor가 되어야겠다”고 결심했습니다. 미래에는 제가 주요 contributor인 오픈 소스가 귀사의 프로젝트에서도 쓰일 수 있는 날을
+                        기대하고 있습니다.</p>
                 </div>
             </div>
-        </section>
-        <section class="ui vertical full-page">
-            <div class="ui wrap full-page animated middle aligned center aligned grid vertical">
+        </div>
+    </section>
+    <section id="experiences" class="full-page">
+
+        <div class="ui middle aligned center aligned grid selections full-page">
+            <div class="column">
+                <div class="ui container hidden"><h1 class="header">"Experiences"</h1></div>
+                <div class="center titles hidden">
+                    <a href="#" data-type="conclusion">단정의 위험</a>|<a href="#" data-type="bestway">최선을 지향하자</a>|<a href="#" data-type="fundamental">원인과 원리</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-page brightness img background novisible explain">
+            <i class="remove icon close"></i>
+            <div class="ui full-page middle aligned center aligned grid vertical">
                 <div class="column">
                     <div class="ui container inverted padded">
-                        <h1 id="title" class="ui inverted header large"></h1>
-                        <p class="white novisible content">개인프로젝트 및 업무에서 수 많은 오픈 소스를 적용하며, 기능을 하나하나 개발하는 것도 굉장히 즐거운 일이지만 결과적으로 기술적 측면에서 개발보단 사용이 더 많은 것 같다고 생각했습니다, 또한 프레임워크를 사용할수록 구조와 동작 원리 대해 궁금하였습니다.</p>
-                        <p class="white novisible content">그때 저는 “아! 스스로의 깊이 있는 기술 역량 향상과 업무 능력의 발전을 이루려면 open source contributor가 되어야겠다”고 결심했습니다. 미래에는 제가 주요 contributor인 오픈 소스가 귀사의 프로젝트에서도 쓰일 수 있는 날을 기대하고 있습니다.</p>
+                        <h1 class="ui inverted header large title"></h1>
+                        <p class="white content contents"></p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="experiences" class="full-page">
-            
-            <div class="ui middle aligned center aligned grid selections full-page">
-                <div class="column">
-                    <div class="ui container hidden"><h1 class="header">"Experiences"</h1></div>
-                    <div class="center titles hidden">
-                        <a href="#" data-type="conclusion">단정의 위험</a>|<a href="#" data-type="bestway">최선을 지향하자</a>|<a href="#" data-type="fundamental">원인과 원리</a>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-            <div class="full-page brightness img background novisible explain">
-                <i class="remove icon close"></i>
-                <div class="ui full-page middle aligned center aligned grid vertical">
-                    <div class="column">
-                        <div class="ui container inverted padded">
-                            <h1 class="ui inverted header large title"></h1>
-                            <p class="white content contents"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </section>
+    <section class="ui vertical full-page">
+        <div class="wrap full-page brightness ui middle aligned left aligned grid vertical">
+            <div class="column">
+                <div class="ui container inverted padded">
+                    <h1 class="ui inverted header large line">Skills</h1>
 
-        </section>
-        <section class="ui vertical full-page">
-            <div class="wrap full-page brightness ui middle aligned left aligned grid vertical">
-                <div class="column">
-                    <div class="ui container inverted padded">
-                        <h1 class="ui inverted header large line">Skills</h1>
-
-                        <h3 class="ui inverted header ">Server</h1>
+                    <h3 class="ui inverted header ">Server</h1>
                         <p class="white">
                             Sping4, Hibernate JPA, Maven을 이용한 프로젝트에서 업무개발(화면/서버) 경험이 있음,
                             Spring Integration, MyBatis, Maven 프로젝트 구성 경험이 있음, Node.js, Socket.io, Express.js 개발환경 및 프로젝트 구성 POC 담당하였으며
@@ -117,73 +120,73 @@
                         </p>
 
                         <h3 class="ui inverted header ">Client</h1>
-                        <p class="white">
-                            modal 관련 jQuery 플러그인 개발 경험, audio 태그 제어를 위한 플레이어 모듈 개발 경험, jquery jqWidget를 이용한 SPA 업무 개발을 하였으며 이 부분에서 Location 기능을
-                            제대로 지원 못해 북마크, 히스토리 기능에서의 많은 아쉬움을 느낌
-                        </p>
-                        
-                        <h3 class="ui inverted header ">CI</h1>
-                        <p class="white">
-                            프로젝트에서 사용된 Go를 사용하여 각 개발, 테스트, 스테이지 서버에 빌드/배포 경험이 있음, AWS배포시 배포 시간 단축을 위한 쉘스크립트 작성 경험이 있음,
-                            현재는 분산되어있던 각 서버를 AWS에 이관하고 있으며 해당 Bestion Host에서의 효율적인 배포에 대해 고민하고 있음.
-                        </p>
+                            <p class="white">
+                                modal 관련 jQuery 플러그인 개발 경험, audio 태그 제어를 위한 플레이어 모듈 개발 경험, jquery jqWidget를 이용한 SPA 업무 개발을 하였으며 이 부분에서 Location 기능을
+                                제대로 지원 못해 북마크, 히스토리 기능에서의 많은 아쉬움을 느낌
+                            </p>
 
-                        <h3 class="ui inverted header ">Git</h1>
-                        <p class="white ">
-                            프로젝트의 Git관리 담당으로 branch 정책과 제품의 릴리즈를 준비하고 완료 후의 다시 핫픽스와 개발을 merge 작업 등 다양한 업무를 수행 함
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="hobbies" class="ui vertical segment full-page">
-            <div id="selections" class="wrap full-page ui middle aligned center aligned grid">
-                <div class="column">
-                    <div class="ui container equal width grid">
-                        <div class="column">
-                            <ul id="da-thumbs" class="da-thumbs">
-                                <li>
-                                    <a href="#">
-                                        <div class="img visible content background" value="cycle"></div>
-                                        <div class="hover ui center aligned middle aligned grid" data-type="cycle"><span class="column white hobby">Cycle</span></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul id="da-thumbs" class="da-thumbs">
-                                <li>
-                                    <a href="#">
-                                        <div class="img visible content background" value="guitar"></div>
-                                        <div class="hover ui center aligned middle aligned grid" data-type="guitar"><span class="column white hobby">Guitar</span></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <h3 class="ui inverted header ">CI</h1>
+                                <p class="white">
+                                    프로젝트에서 사용된 Go를 사용하여 각 개발, 테스트, 스테이지 서버에 빌드/배포 경험이 있음, AWS배포시 배포 시간 단축을 위한 쉘스크립트 작성 경험이 있음,
+                                    현재는 분산되어있던 각 서버를 AWS에 이관하고 있으며 해당 Bestion Host에서의 효율적인 배포에 대해 고민하고 있음.
+                                </p>
 
-            <div class="full-page brightness img background novisible explain">
-                <i class="remove icon close"></i>
-                <div class="ui full-page middle aligned center aligned grid vertical">
-                    <div class="column">
-                        <div class="ui container inverted padded">
-                            <h1 class="ui inverted header large title"></h1>
-                            <p class="white content contents"></p>
-                        </div>
-                    </div>
+                                <h3 class="ui inverted header ">Git</h1>
+                                    <p class="white ">
+                                        프로젝트의 Git관리 담당으로 branch 정책과 제품의 릴리즈를 준비하고 완료 후의 다시 핫픽스와 개발을 merge 작업 등 다양한 업무를 수행 함
+                                    </p>
                 </div>
             </div>
-        </section>
-    </article>
-    <div class="ui page dimmer">
-        <div class="content">
-            <div class="center">Hello</div>
         </div>
+    </section>
+    <section id="hobbies" class="ui vertical segment full-page">
+        <div id="selections" class="wrap full-page ui middle aligned center aligned grid">
+            <div class="column">
+                <div class="ui container equal width grid">
+                    <div class="column">
+                        <ul id="da-thumbs" class="da-thumbs">
+                            <li>
+                                <a href="#">
+                                    <div class="img visible content background" value="cycle"></div>
+                                    <div class="hover ui center aligned middle aligned grid" data-type="cycle"><span class="column white hobby">Cycle</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul id="da-thumbs" class="da-thumbs">
+                            <li>
+                                <a href="#">
+                                    <div class="img visible content background" value="guitar"></div>
+                                    <div class="hover ui center aligned middle aligned grid" data-type="guitar"><span class="column white hobby">Guitar</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-page brightness img background novisible explain">
+            <i class="remove icon close"></i>
+            <div class="ui full-page middle aligned center aligned grid vertical">
+                <div class="column">
+                    <div class="ui container inverted padded">
+                        <h1 class="ui inverted header large title"></h1>
+                        <p class="white content contents"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+<div class="ui page dimmer">
+    <div class="content">
+        <div class="center">Hello</div>
     </div>
-    <!-- END : MAIN -->
-    <script src="js/index.js"></script>
+</div>
+<!-- END : MAIN -->
+<script src="js/index.js"></script>
 </body>
 
 </html>
